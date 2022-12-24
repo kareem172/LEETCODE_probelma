@@ -1,10 +1,10 @@
 class Solution:
     def isHappy(self, n: int) -> bool:
         
-        visited = []
+        visited = set()
         
         while n not in visited:   
-            visited.append(n)
+            visited.add(n)
             nums = str(n)
             if n == 1:
                 return True
