@@ -4,12 +4,12 @@ class Solution:
         res = []
         for i in range(1, n+1):
             if i % 3 == 0 and i % 5 ==0:
-                val = "FizzBuzz"
+                res.append("FizzBuzz")
             elif i % 3 == 0:
-                val = "Fizz"
+                res.append("Fizz")
             elif i % 5 == 0:
-                val = "Buzz"
+                res.append("Buzz")
             else:
-                val = f"{i}"
-            res.append(val)
+                res.append(f"{i}")
+            
         return res
